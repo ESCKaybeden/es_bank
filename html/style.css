@@ -1,0 +1,1112 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  background: none;
+  -webkit-appearance: none;
+}
+
+/* body{
+  background-size: 100%;
+  background-image: url("https://images8.alphacoders.com/107/thumb-1920-1073623.jpg");
+} */
+
+
+.download-button {
+  position: relative;
+  right:-19rem;
+  top: -5.5rem;
+  border-width: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+ }
+ 
+ .download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #01234b;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ 
+ .download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  opacity:0.7;
+  transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ 
+ .download-button:hover .download {
+  transform: translateY(100%)
+ }
+ 
+ .download svg polyline,.download svg line {
+  animation: docs 1s infinite;
+ }
+ 
+ @keyframes docs {
+  0% {
+   transform: translateY(0%);
+  }
+ 
+  50% {
+   transform: translateY(-15%);
+  }
+ 
+  100% {
+   transform: translateY(0%);
+  }
+ }
+
+
+
+.bank-arkaplan{
+  position: absolute;
+  width: 85rem;
+  height:49rem;
+  right: 14.9rem;
+  top: 6rem;
+  background-size: 90rem;
+  background-image:url("./img/arkaplan.png");
+  border-radius: 40px;
+}
+
+@keyframes cardAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+.bank-info{
+  position: absolute;
+  background-size: 20rem;
+  width:20.1rem;
+  height: 18.1rem;
+  right: 72.1rem;
+  top: 32rem;
+  opacity:0.8;
+  background-image: url('./img/cards.png');
+  animation: cardAnim 2s ease 0s 1 normal forwards;
+}
+
+
+.bank-transfer-header{
+  position: absolute;
+  background-size: 20rem;
+  width:20.5rem;
+  height: 2.7rem;
+  right: 18.3rem;
+  top: 35.4rem;
+  filter: brightness(120%);
+}
+
+.bank-billing-history-get{
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size:contain;
+  right: 69.5rem;
+  top: 33.8rem;
+  width: 25.8rem;
+  height:15.9rem;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  z-index: 10;
+  filter: brightness(120%);
+}
+
+.bank-billing-history-arkaplan{
+  position: absolute;
+  width:35.9rem;
+  height: 32.5rem;
+  right: 63.4rem;
+  top: 24.4rem;
+  filter: brightness(120%);
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  filter: brightness(120%);
+}
+
+
+
+.bank-billing-history-info{
+  position:relative;
+  left: .9rem;
+  margin-top: 0.8rem;
+  text-align:center;
+  width:90%;
+  color: white;
+  letter-spacing: 1px; 
+  opacity:0.7;
+  font-weight: 500;
+  font-family: 'Teko', sans-serif;
+  filter: brightness(120%);
+  margin-bottom: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+
+.billing-info{
+  position:relative;
+  right: -8.6rem;
+  top: 0.6rem;
+  font-size: 1rem;
+  width: 11rem;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Montserrat';  */
+	box-shadow: -3px 0 0 -2px rgb(255, 255, 255), 3px 0 0 -2px rgb(255, 255, 255);
+  /* font-family: 'Nanum Brush Script', cursive; */
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ }
+ 
+ .container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+ }
+ 
+ /* Create a custom checkbox */
+ .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #ccc;
+  transition: all 0.3s;
+  border-radius: 5px;
+ }
+ 
+ /* When the checkbox is checked, add a blue background */
+ .container input:checked ~ .checkmark {
+  background-color: #47da99;
+  animation: pop 0.5s;
+  animation-direction: alternate;
+ }
+ 
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+ }
+ 
+ /* Show the checkmark when checked */
+ .container input:checked ~ .checkmark:after {
+  display: block;
+ }
+ 
+ /* Style the checkmark/indicator */
+ .container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+ }
+ 
+ @keyframes pop {
+  0% {
+   transform: scale(1);
+  }
+ 
+  50% {
+   transform: scale(0.9);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
+
+.billing-pay{
+  position:absolute;
+  top: 0.5rem;
+  width:1.7rem;
+  right: -0.4rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  font-family: 'Oxanium', cursive;
+  font-weight: 500;
+}
+
+.bank-billing-history-get button{
+  position:absolute;
+  color: rgb(255, 255, 255) !important;
+  right: -0.4rem;
+  width: 3rem;
+  border: 2px solid #0051ff;
+}
+
+.billing-price{
+  position: absolute;
+  right: 17rem;
+  top: 0.4rem;
+  font-size: 1rem;
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: rgb(255, 0, 0);
+  font-weight: 500;
+  font-family: 'Oxanium', cursive;
+}
+
+.billing-radius{
+  position: absolute;
+  width:23rem;
+  height:2rem;
+  right: -1.5rem;
+  top: 0.1rem;
+  z-index: -14;
+  border: .1vw solid;
+    border-image : linear-gradient(-170deg, white 10%, #af261c00 30%, #af261c00 65%,white 100%) 10;
+  border-left: 5px solid #ffffff;
+  background: #d6d6d60a;
+}
+
+
+.bank-billing-header-text h1{
+  position: absolute;
+  width: 15rem;
+  font-size: 1.4rem;
+  top: 9rem;
+  right:-6.4rem;
+  opacity: 0.7;
+  background-color:rgba(0, 0, 0, 0.514);
+  color: rgb(9, 255, 0);
+  font-family: "Inter", sans-serif;
+}
+
+.bank-no-billing-image{
+  position: absolute;
+  width: 12rem;
+  top: 4.3rem;
+  right:-5rem;
+  z-index: -1;
+}
+
+
+.bank-billing-history-header{
+  position: absolute;
+  width:24.6rem;
+  height: 2.5rem;
+  right: 69rem;
+  top: 31.0rem;
+  filter: brightness(120%);
+  z-index: 10;
+}
+
+.bank-billing-header-text{
+  position:absolute;
+  font-size: 1.3rem;
+  right: 79rem;
+  top: 31.4rem;
+  z-index: 10;
+  opacity: 0.7;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  filter: brightness(120%);
+}
+
+
+
+.bank-billing-header-icon{
+  position:absolute;
+  width:2rem;
+  right: 71rem;
+  top: 31.2rem;
+  z-index: 10;
+  opacity: 0.7;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  filter: brightness(120%);
+}
+
+.bank-transfer-history img{
+  position:absolute;
+  width: 15%;
+  right: 15.5rem;
+}
+
+ .bank-transfer-history{
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size:contain;
+  right: 17rem;
+  top: 38.2rem;
+  width: 19.8rem;
+  height:9.3rem;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+} 
+
+.bank-transfer-header h1{
+  position: absolute;
+  right: 8rem;
+  top: -0.5rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
+  z-index: 10;
+  letter-spacing:1px;
+  filter: brightness(120%);
+}
+
+.bank-transactions-history img{
+  position:absolute;
+  top: 0.4rem;
+  width: 1.8rem;
+  right: 16.5rem;
+  z-index: 10;
+}
+
+
+
+.bank-transactions-info{
+  position:relative;
+  height:-1%;
+  left: .9rem;
+  margin-top: 0.7rem;
+  text-align:center;
+  font-size:0.9rem;
+  width:95%;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px; 
+  opacity:0.7;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+} 
+
+.bank-transactions-history p{
+  position:absolute;
+  right: 1rem;
+  top: -0.9rem;
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: white;
+  filter: brightness(120%);
+}
+
+.bank-transfer-info{
+  position:relative;
+  height:-1%;
+  left: .9rem;
+  margin-top: 0.9rem;
+  text-align:center;
+  font-size: 0.8rem;
+  width:90%;
+  color: white;
+  letter-spacing: 3px; 
+  opacity:0.7;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  filter: brightness(120%);
+} 
+
+
+
+.bank-transfer-history-border{
+  position: absolute;
+  background-size: 30rem;
+  width:30rem;
+  height: 19rem;
+  right: 13.5rem;
+  top: 30.5rem;
+  background-image: url('./img/transfer-history.png');
+  filter: brightness(120%);
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  opacity: 0
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+.bank-transfer-icon{
+  position: absolute;
+  background-size: 11.0rem;
+  width:9rem;
+  height: 15rem;
+  right: 17.5rem;
+  top: 31.4rem;
+  background-image: url('./img/transactions-icon.png');
+  z-index:10;
+  filter: brightness(120%);
+}
+
+.bank-transactions-header{
+  position: absolute;
+  background-size: 20rem;
+  width:20.4rem;
+  height: 2.7rem;
+  right: 42.2rem;
+  top: 35.3rem;
+  z-index: 10;
+  filter: brightness(120%);
+}
+
+
+
+.bank-transactions-header-arkaplan{
+  position: absolute;
+  background-size: 30rem;
+  width:25.5rem;
+  height: 19rem;
+  right: 41.9rem;
+  top: 30.5rem;
+  background-image: url('./img/bank-transactions-header.png');
+  z-index:10;
+  filter: brightness(120%);
+}
+
+.bank-transactions-icon{
+  position: absolute;
+  background-size: 1.7rem;
+  width:1.65rem;
+  height: 1.77rem;
+  right: 43.9rem;
+  top: 35.6rem;
+  background-image: url('./img/past.png');
+  z-index:10;
+  filter: brightness(120%);
+}
+
+.bank-transactions-icon:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+.bank-billing-history-get button:hover{
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+
+.bank-exit:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+  filter: brightness(120%);
+}
+
+
+
+ .bank-transactions-history{
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size:contain;
+  right: 41rem;
+  top: 38rem;
+  width: 19.8rem;
+  height:9rem;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  z-index: 10;
+  filter: brightness(120%);
+} 
+
+.bank-balance-border{
+  position: absolute;
+  background-size: 25rem;
+  width:25rem;
+  height:7.8rem;
+  right: 70rem;
+  top: 15.1rem;
+  background-image: url('./img/balance-border.png');
+  filter: brightness(120%);
+}
+
+.bank-balance-avatar img{
+  position:absolute;
+  right: 90rem;
+  top: 8.5rem;
+  width:5rem;
+  height:5rem;
+  border-radius:40px;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-image: url('./img/avatar.jpg');
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.bank-balance-avatar p{
+  position:absolute;
+  right: 79.5rem;
+  top: 8rem;
+  width:10rem;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  opacity:0.7;
+  color: white;
+}
+
+.bank-yes-or-no{
+  position: relative;
+  display: flex;
+}
+
+.bank-yes-or-no button{
+  position:relative;
+  right: -27.1rem;
+  top: 20rem;
+  width:10rem;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  opacity:0.7;
+  display: none;
+  margin: 10px;
+  z-index: 10;
+}
+
+.bank-yes{
+  border-color: rgb(0, 255, 0);
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+}
+
+.bank-no{
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+}
+
+.bank-balance-avatar h1{
+  position:absolute;
+  right: 80.5rem;
+  top: 10.5rem;
+  width:8rem;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  opacity:0.7;
+  color: white;
+}
+
+.bank-balance-border h1{
+  position: absolute;
+  right:9.3rem;
+  top: -1rem;
+  font-size: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color:rgba(255, 255, 255, 0.562);
+  letter-spacing:1px;
+}
+
+.bank-balance-border p{
+  position: absolute;
+  top: 2.1rem;
+  right: 4rem;
+  width:20rem;
+  font-size: 1.9rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  color:white;
+}
+
+
+.bank-balance-icon{
+  position: absolute;
+  width:7.2rem;
+  height: 4.3rem;
+  right: 67.5rem;
+  top: 16.7rem;
+  z-index:10;
+  filter: brightness(101%);
+}
+
+.bank-balance-icon:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.bank-logo{
+  position: absolute;
+  width:10rem;
+  height: 4.6rem;
+  right: 53rem;
+  top: 6.7rem;
+  background-image: url('./img/logo.png');
+  z-index:10;
+}
+
+
+.bank-deposit-border{
+  position: absolute;
+  background-size:30rem;
+  width:30rem;
+  height: 3.4rem;
+  right: 20rem;
+  top: 15rem;
+  background-image: url('./img/deposit-border.png');
+  z-index:10;
+}
+
+.bank-deposit-border-icon{
+  position: absolute;
+  width:3rem;
+  right: 20.6rem;
+  top: 15.6rem;
+  z-index:10;
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.bank-deposit-border-icon:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.bank-transfer-icon:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.bank-deposit-border h1{
+  position: absolute;
+  color: white;
+  top:-0.2rem;
+  right: 6.6rem;
+  font-size: 1.5rem;
+  opacity: 0.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+.amount{
+  font-size: 0.9rem;
+  color: rgb(255, 0, 0);
+  letter-spacing: 2px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.amount-deposit{
+  font-size: 0.9rem;
+  color: rgb(0, 255, 55);
+  letter-spacing: 2px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.iban{
+  font-size: 0.9rem;
+  color: rgb(255, 0, 242);
+  letter-spacing: 2px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.bank-withdraw-border h1{
+  position: absolute;
+  color: white;
+  top:-0.2rem;
+  right: 5.7rem;
+  font-size: 1.4rem;
+  opacity: 0.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.bank-deposit-input > input {
+  outline: none;
+  border: none;
+  background: none;
+  position: relative;
+  color:white;
+  top: 3.7rem;
+  left: 73rem;
+  height:25rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  z-index: 10;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  filter: brightness(135%) hue-rotate(125deg);
+  -webkit-filter: brightness(135%) hue-rotate(125deg);
+  -moz-filter: brightness(135%) hue-rotate(125deg);
+  filter: drop-shadow(5px 8px 30px rgba(219, 43, 48, 0.15));
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.22);
+  font-size: 1.2rem;
+  text-indent:0;
+  text-align: center;
+}
+
+
+.bank-deposit-input placeholder {
+  color: red;
+}
+
+
+.bank-withdraw-input > input {
+  outline: none;
+  border: none;
+  background: none;
+  position: relative;
+  color:white;
+  top: -4.9rem;
+  left: 73rem;
+  width: 10rem;
+  font-size: 1.5rem;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  filter: brightness(135%) hue-rotate(125deg);
+  -webkit-filter: brightness(135%) hue-rotate(125deg);
+  -moz-filter: brightness(135%) hue-rotate(125deg);
+  filter: drop-shadow(5px 8px 30px rgba(219, 43, 48, 0.15));
+}
+
+.bank-transfer-input > input {
+  outline: none;
+  border: none;
+  background: none;
+  position: relative;
+  color:white;
+  top: 8.25rem;
+  left: 84rem;
+  width: 10rem;
+  font-size: 1.4rem;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 200;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  filter: brightness(135%) hue-rotate(125deg);
+  -webkit-filter: brightness(135%) hue-rotate(125deg);
+  -moz-filter: brightness(135%) hue-rotate(125deg);
+}
+
+.bank-transfer-amount-input > input {
+  outline: none;
+  border: none;
+  background: none;
+  position: relative;
+  color:white;
+  top: 6.5rem;
+  left: 57.5rem;
+  width: 14rem;
+  font-size: 1.3rem;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 200;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  filter: brightness(135%) hue-rotate(125deg);
+  -webkit-filter: brightness(135%) hue-rotate(125deg);
+  -moz-filter: brightness(135%) hue-rotate(125deg);
+}
+
+
+.bank-withdraw-border{
+  position: absolute;
+  background-size:30rem;
+  width:30rem;
+  height: 3.4rem;
+  right: 20rem;
+  top: 20rem;
+  background-image: url('./img/deposit-border.png');
+}
+
+.bank-withdraw-border-icon{
+  position: absolute;
+  width:2.9rem;
+  right: 20.7rem;
+  top: 20.9rem;
+  z-index:10;
+}
+
+.bank-withdraw-border-icon:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);  
+  -moz-transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.bank-no-transfer{
+  position: absolute;
+  right: 40rem;
+  top: 41rem;
+  opacity:0.3;
+  color: white;
+  width:20rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  z-index: 10;
+  letter-spacing:1px;
+}
+
+.bank-no-user{
+  position: absolute;
+  right: 20rem;
+  top: 41rem;
+  opacity:0.3;
+  color: white;
+  width:15rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  z-index: 10;
+  letter-spacing:1px;
+}
+
+.bank-exit h1{
+  position: absolute;
+  color: white;
+  font-weight: 100;
+  width:15rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing:1px;
+  right: 0.1rem;
+  font-size: 1.2rem;
+  top: -0.6rem;
+}
+
+.bank-exit{
+  position: absolute;
+  right: 19rem;
+  top: 7.8rem;
+}
+
+html {
+  font-size: 16.0px;
+}
+
+@media screen and (width: 1600px) and (height: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (width: 1440px) and (height: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (width: 1680px) and (height: 1050px) {
+  html {
+    font-size: 14.0px;
+  }
+}
+
+@media screen and (width: 1600px) and (height: 900px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (width: 1768px) and (height: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (width: 1366px) and (height: 768px) {
+  html {
+    font-size: 11.4px;
+  }
+}
+@media screen and (width: 1280px) and (height: 1024px) {
+  html {
+    font-size: 11.7px;
+  }
+}
+@media screen and (width: 1280px) and (height: 720px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+  html {
+    font-size: 10.05px;
+  }
+}
+@media screen and (width: 832px) and (height: 624px) {
+  html {
+    font-size: 8.05px;
+  }
+}
+
+@media screen and (width: 800px) and (height: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
