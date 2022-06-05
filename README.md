@@ -4,4 +4,3 @@
 
 - **_ESCKaybeden#0488_**
 - **_! Raider#0031_**
-- [**Discord**](https://discord.gg/EkwWvFS)
